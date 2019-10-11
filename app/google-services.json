@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "553796945968",
+    "firebase_url": "https://the-pod-id.firebaseio.com",
+    "project_id": "the-pod-id",
+    "storage_bucket": "the-pod-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553796945968:android:972d85eaf3e6df3a79c5f5",
+        "android_client_info": {
+          "package_name": "com.example.thepod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553796945968-729uredm97erd38ucdum6oclsaqvaan1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thepod",
+            "certificate_hash": "cfd3ebde89f6a1a4075f64635a78652f30d218a7"
+          }
+        },
+        {
+          "client_id": "553796945968-omnuaunk72k32so3gvd404vprstf1ca8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwkXW26ryXHbkF4WkNR7BbTAqN1iQ26wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553796945968-omnuaunk72k32so3gvd404vprstf1ca8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

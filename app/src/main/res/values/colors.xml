@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFD700</color>
-    <color name="colorPrimaryDark">#FFD700</color>
+
+    <!--    APP COLORS-->
+    <color name="colorPrimary">@color/yellow</color>
+    <color name="colorPrimaryDark">@color/yellowDark</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--    YELLOWS-->
+    <color name="yellow">#FFD700</color>
+    <color name="yellowDark">#FFD700</color>
+
+    <!--    REDS-->
+    <color name="red">#D81B60</color>
+
 </resources>
