@@ -3,7 +3,7 @@
 
     <!--    APP COLORS-->
     <color name="colorPrimary">@color/yellow</color>
-    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorPrimaryDark">@color/gold</color>
     <color name="colorAccent">#D81B60</color>
 
     <!--    YELLOWS-->
