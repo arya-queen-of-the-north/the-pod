@@ -4,46 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image"
     android:paddingLeft="10dp"
+    android:background="@drawable/background_image"
     tools:context=".LoginPageActivity">
 
     <com.google.android.material.chip.ChipGroup
-        android:layout_width="121dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        android:id="@+id/chipGroup"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:chipStrokeColor="@color/yellow"
-            app:checkedIcon="#000000"
+            android:text="Eggs"
             app:checkedIconVisible="true"
-            android:text="Eggs" />
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
 
         <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dairy" />
-    </com.google.android.material.chip.ChipGroup>
+            android:text="Tree Nut"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/rounded_button"
-        android:ems="10"
-        android:inputType="text"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peanuts"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shellfish"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheat"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soy"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sesame seeds"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/yellow"
+            app:chipStrokeWidth="1dp" />
+
+
+    </com.google.android.material.chip.ChipGroup>
 
     <ImageView
         android:id="@+id/imageView7"
@@ -68,5 +115,87 @@
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Please select your allergies"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="340dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="32dp"
+        android:scrollHorizontally="false"
+        android:text="If you're allergies are not listed please write here"
+        app:layout_constraintEnd_toEndOf="@+id/chipGroup"
+        app:layout_constraintStart_toStartOf="@+id/chipGroup"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Credit card details"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="340dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/gold"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By creating an account,you agree to our"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms of Service and Privacy Policy"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

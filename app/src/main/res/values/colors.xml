@@ -3,14 +3,18 @@
 
     <!--    APP COLORS-->
     <color name="colorPrimary">@color/yellow</color>
-    <color name="colorPrimaryDark">@color/yellowDark</color>
+    <color name="colorPrimaryDark">@color/black</color>
     <color name="colorAccent">#D81B60</color>
 
     <!--    YELLOWS-->
     <color name="yellow">#FFD700</color>
-    <color name="yellowDark">#FFD700</color>
+    <color name="black">#000000</color>
+    <color name="gold">#FFA500</color>
 
     <!--    REDS-->
     <color name="red">#D81B60</color>
+
+    <!--    WHITES-->
+    <color name="white">#FFFFFF</color>
 
 </resources>
