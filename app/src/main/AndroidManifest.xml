@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.OrderMenu"></activity>
+        <activity android:name=".Fragments.OrderFragments"></activity>
         <activity android:name=".Activities.Registration2Activity" />
         <activity android:name=".Activities.RegistrationActivity" />
         <activity android:name=".Activities.LoginPageActivity" />
