@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="10dp"
     android:background="@drawable/background_image"
+    android:paddingLeft="10dp"
     tools:context=".LoginPageActivity">
 
     <com.google.android.material.chip.ChipGroup
@@ -150,53 +150,75 @@
         app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="340dp"
-        android:layout_height="145dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/input_background"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
     <android.widget.Button
         android:id="@+id/button5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="@color/gold"
         android:background="@drawable/rounded_button_login"
+        android:backgroundTint="@color/gold"
         android:text="Register"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="By creating an account,you agree to our"
         android:textColor="@color/black"
         android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Terms of Service and Privacy Policy"
         android:textColor="@color/yellow"
-        app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="42dp"
+        android:orientation="horizontal"
+        android:background="@drawable/input_background"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="XXXX XXXX XXXX XXXX" />
+
+        <TextView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="dfdfdfdfdfdfdf"/>
+
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
