@@ -1,9 +1,11 @@
-package com.example.thepod;
+package com.example.thepod.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+
+import com.example.thepod.R;
 
 public class OrderMenu extends AppCompatActivity {
 
