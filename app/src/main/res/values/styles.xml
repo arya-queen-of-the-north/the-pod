@@ -18,4 +18,12 @@
         <item name="android:background">@drawable/rounded_button_login</item>
     </style>
 
+    <style name="tabStyle">
+        <item name="android:background">@drawable/rounded_button_login</item>
+        <item name="tabRippleColor">@color/white</item>
+        <item name="tabTextAppearance">@color/white</item>
+        <item name="tabTextColor">@color/white</item>
+
+    </style>
+
 </resources>
