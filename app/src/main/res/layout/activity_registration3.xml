@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration3">
+    tools:context=".Activities.Registration3">
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chipGroup"
         android:layout_width="330dp"
         android:layout_height="110dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="8dp"
 
         app:layout_constraintStart_toStartOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/textView13">
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -105,9 +105,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="navigateBack"
         android:text="Register"
-
         android:textColor="#FFD700"
         android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
@@ -126,7 +126,6 @@
         android:id="@+id/editText2"
         android:layout_width="340dp"
         android:layout_height="110dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/input_background"
         android:ems="10"
         android:inputType="textMultiLine"
@@ -152,22 +151,26 @@
         android:id="@+id/button5"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_button_login"
         android:backgroundTint="@color/gold"
         android:text="Register"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2"
-        tools:layout_editor_absoluteY="590dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="By creating an account,you agree to our"
         android:textColor="@color/black"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="@+id/button5"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -175,22 +178,21 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
         android:text="Terms of Service and Privacy Policy"
         android:textColor="@color/yellow"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/textView16" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <EditText
         android:id="@+id/editText7"
         android:layout_width="340dp"
-        android:layout_height="190dp"
+        android:layout_height="220dp"
 
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_button"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -198,6 +200,9 @@
         android:id="@+id/editText3"
         android:layout_width="300dp"
         android:layout_height="40dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
         android:hint="XXXX XXXX XXXX XXXX"
         app:layout_constraintStart_toStartOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -207,6 +212,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Month/Year"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/editText3"
         app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
@@ -214,33 +220,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="XXX"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="440dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editText8"
+        app:layout_constraintTop_toBottomOf="@+id/editText8" />
 
     <EditText
+        android:id="@+id/editText8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:hint="CVC2/CVV2"
-        tools:layout_editor_absoluteX="238dp"
-        tools:layout_editor_absoluteY="497dp" />
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <EditText
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="12/22"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintStart_toStartOf="@+id/editText6"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Card Owner"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="485dp" />
-
-
-</EditText>
+        app:layout_constraintStart_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

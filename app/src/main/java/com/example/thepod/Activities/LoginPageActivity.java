@@ -17,12 +17,7 @@ public class LoginPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-        GoogleSignInClient
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
     }
 
@@ -30,10 +25,6 @@ public class LoginPageActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RegistrationActivity.class);
         startActivity(intent);
         finish();
-    }
-
-    public void googleSignInButton(View v){
-
     }
 
 
