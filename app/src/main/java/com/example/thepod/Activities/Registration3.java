@@ -2,6 +2,7 @@ package com.example.thepod.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -16,5 +17,10 @@ public class Registration3 extends AppCompatActivity {
     }
 
     public void navigateBack(View view) {
+        startActivity(new Intent(this,RegistrationActivity.class));
+    }
+
+    public void openMenu(View view){
+        startActivity(new Intent(this,Menu.class));
     }
 }
