@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: api-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: api-fe-ip
+    ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+  - host: "api.internat.et5nina.gebeya.co"
+    http:
+      paths:
+      - path: /user/*
+        backend:
+          serviceName: pod-api-service
+          servicePort: 80
+      - path: /user
+        backend:
+          serviceName: pod-api-service
+          servicePort: 80
