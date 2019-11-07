@@ -11,12 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Menu"></activity>
-        <activity android:name=".Activities.Registration3">
-
-        </activity>
+        <activity android:name=".HomeScreen"></activity>
+        <activity android:name=".Activities.Menu" />
+        <activity android:name=".Activities.Registration3"></activity>
         <activity android:name=".Fragments.OrderFragments" />
-        <activity android:name=".Activities.Registration2Activity" />
         <activity android:name=".Activities.RegistrationActivity" />
         <activity android:name=".Activities.LoginPageActivity" />
         <activity android:name=".Activities.MainActivity">
