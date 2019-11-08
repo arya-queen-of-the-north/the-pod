@@ -40,6 +40,7 @@
         android:hint="First Name"
         android:paddingLeft="32dp"
         android:paddingTop="2dp"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -53,7 +54,7 @@
         android:hint="Last Name"
         android:paddingLeft="32dp"
         android:paddingTop="8dp"
-
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
         app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
         app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
@@ -67,6 +68,7 @@
         android:hint="Email"
         android:paddingLeft="32dp"
         android:paddingTop="8dp"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="@+id/editTextLastName"
         app:layout_constraintStart_toStartOf="@+id/editTextLastName"
         app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
@@ -81,6 +83,7 @@
         android:inputType="textPassword"
         android:paddingLeft="32dp"
         android:paddingTop="8dp"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
         app:layout_constraintStart_toStartOf="@+id/editTextEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />

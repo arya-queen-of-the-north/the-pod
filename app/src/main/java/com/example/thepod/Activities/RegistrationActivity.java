@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.thepod.MenuActivity;
 import com.example.thepod.R;
 import com.example.thepod.httpclient.RetrofitClient;
 import com.example.thepod.httpclient.ThePodService;
@@ -109,18 +110,21 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
                 .getInstance()
                 .getThePodService()
                 .createUser(email,password,firstName,lastName,confirmPassword);
+        startActivity(new Intent(getApplication(), MenuActivity.class));
         call.enqueue(new Callback<ResponseBody>() {
+
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                try {
-                    Log.d(TAG, "onResponse-------- : "+response.code());
-                    String responseString = response.body().string();
-                    Toast.makeText(RegistrationActivity.this,responseString,Toast.LENGTH_LONG).show();
-                    Log.d(TAG, "onResponse: ");
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Log.d(TAG, "onResponse-------- : "+response.code());
+//                  //  String responseString = response.body().string();
+//                   // Toast.makeText(RegistrationActivity.this,responseString,Toast.LENGTH_LONG).show();
+//                    Log.d(TAG, "onResponse: ");
+//
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+                startActivity(new Intent(getApplication(), MenuActivity.class));
 
             }
 
