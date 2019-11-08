@@ -58,7 +58,9 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
     }
 
 
-
+    public void openRegistration2(View v){
+        startActivity(new Intent(this,RegistrationActivity2.class));
+    }
 
     public void navigateBack(View v){
         Intent intent = new Intent(this,LoginPageActivity.class);
@@ -85,7 +87,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             return;
         }
         if (password.isEmpty()){
-            ediTextPassword.setError("Email is empty");
+            ediTextPassword.setError("Password is empty");
             ediTextPassword.requestFocus();
             return;
         }
@@ -141,9 +143,9 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
             case R.id.registerButton:
                 userSignUp();
                 break;
-            case R.id.textViewLogin:
 
-                break;
+
+
         }
     }
 

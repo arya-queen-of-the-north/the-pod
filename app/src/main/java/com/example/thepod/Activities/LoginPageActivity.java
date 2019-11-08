@@ -10,26 +10,24 @@ import android.widget.Button;
 import com.example.thepod.MenuActivity;
 import com.example.thepod.R;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class LoginPageActivity extends AppCompatActivity {
 
-    @BindView(R.id.login_button)
+
     Button login_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
-        ButterKnife.bind(this);
+
+        login_button = findViewById(R.id.login_button);
 
 
     }
 
-    @OnClick(R.id.login_button)
-    public void userLogin(){
+
+    public void userLogin(View v){
         startActivity(new Intent(this, MenuActivity.class));
 
     }

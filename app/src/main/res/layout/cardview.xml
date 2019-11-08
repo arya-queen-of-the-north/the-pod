@@ -33,16 +33,14 @@
                 android:id="@+id/name"
                 android:layout_width="98dp"
                 android:layout_height="37dp"
-                android:layout_marginStart="173dp"
-                android:layout_marginLeft="173dp"
                 android:text="Name"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.298"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="@+id/description"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.164" />
+                app:layout_constraintVertical_bias="0.183" />
 
             <ImageView
                 android:id="@+id/img"
@@ -64,18 +62,15 @@
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="118dp"
-                android:layout_marginRight="118dp"
                 android:layout_marginBottom="64dp"
                 android:text="Description"
                 android:textSize="18dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.344"
-                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintStart_toStartOf="@+id/price"
                 app:layout_constraintTop_toBottomOf="@+id/name"
                 app:layout_constraintVertical_bias="0.892" />
 
@@ -83,17 +78,14 @@
                 android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginLeft="33dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="125dp"
-                android:layout_marginRight="125dp"
                 android:layout_marginBottom="3dp"
                 android:text="250ETB"
                 app:layout_constraintBottom_toTopOf="@+id/rate"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.851"
-                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
                 app:layout_constraintTop_toBottomOf="@+id/description" />
 
             <ImageView
