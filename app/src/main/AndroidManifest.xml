@@ -11,9 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeScreen"></activity>
+        <activity android:name=".Menu"></activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu">
+
+        </activity>
+        <activity android:name=".HomeScreen" />
         <activity android:name=".Activities.Menu" />
-        <activity android:name=".Activities.RegistrationActivity2"></activity>
+        <activity android:name=".Activities.RegistrationActivity2" />
         <activity android:name=".Fragments.OrderFragments" />
         <activity android:name=".Activities.RegistrationActivity" />
         <activity android:name=".Activities.LoginPageActivity" />
