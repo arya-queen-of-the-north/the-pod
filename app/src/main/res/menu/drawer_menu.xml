@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/navigation_order_history"
+              android:title="@string/order_history" />
+
+        <item android:id="@+id/navigation_settings"
+              android:title="@string/settings"/>
+
+        <item android:id="@+id/navigation_faq"
+              android:title="@string/faq"/>
+
+        <item android:id="@+id/navigation_help"
+             android:title="@string/help"/>
+
+        <item android:id="@+id/navigation_about"
+              android:title="@string/about"/>
+
+        <item android:id="@+id/navigation_logout"
+              android:title="@string/logout"/>
+
+
+    </group>
+
+</menu>
