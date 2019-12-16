@@ -12,7 +12,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.example.thepod.R;
 
 
-@Database(entities = {User.class,Menu.class}, version = 1)
+@Database(entities = {User.class,Menu.class}, version = 1,exportSchema = false)
 public abstract class PodDatabase extends RoomDatabase {
 
     private static PodDatabase instance;
@@ -48,15 +48,15 @@ public abstract class PodDatabase extends RoomDatabase {
         }
         @Override
         protected Void doInBackground(Void... voids) {
-            menuDao.insert(new Menu(R.id.image_view_lasagna,"Lasagna","Tasty",
-                    "5.0","500",R.id.image_view_star_icon,
-                    R.id.image_view_add_symbol));
-            menuDao.insert(new Menu(R.id.image_view_lasagna,"Lasagna","Tasty",
-                    "5.0","500",R.id.image_view_star_icon,
-                    R.id.image_view_add_symbol));
-            menuDao.insert(new Menu(R.id.image_view_lasagna,"Lasagna","Tasty",
-                    "5.0","500",R.id.image_view_star_icon,
-                    R.id.image_view_add_symbol));
+            menuDao.insert(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                    "5.0","500",R.drawable.ic_star,
+                    R.drawable.ic_add_circle_24px));
+            menuDao.insert(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                    "5.0","500",R.drawable.ic_star,
+                    R.drawable.ic_add_circle_24px));
+            menuDao.insert(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                    "5.0","500",R.drawable.ic_star,
+                    R.drawable.ic_add_circle_24px));
 
             return null;
         }

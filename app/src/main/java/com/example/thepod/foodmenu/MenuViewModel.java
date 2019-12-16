@@ -23,28 +23,29 @@ public class MenuViewModel extends AndroidViewModel {
 
     public MenuViewModel(@NonNull Application application) {
         super(application);
-        allFoodItems=new MutableLiveData<>();
-        allFoodItems.setValue(new ArrayList<>());
+//        allFoodItems=new MutableLiveData<>();
+//        allFoodItems.setValue(new ArrayList<>());
         repository = new PodRepository(application);
-//        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
-//                        "5.0","500",R.drawable.ic_star,
-//                R.drawable.ic_add_circle_24px));
-//        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
-//                "5.0","500",R.drawable.ic_star,
-//                R.drawable.ic_add_circle_24px));
-//        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
-//                "5.0","500",R.drawable.ic_star,
-//                R.drawable.ic_add_circle_24px));
-//        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
-//                "5.0","500",R.drawable.ic_star,
-//                R.drawable.ic_add_circle_24px));
-//        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
-//                "5.0","500",R.drawable.ic_star,
-//                R.drawable.ic_add_circle_24px));
-//        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
-//                "5.0","500",R.drawable.ic_star,
-//                R.drawable.ic_add_circle_24px));
-//        allFoodItems.setValue(listOfMenu);
+        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                        "5.0","500",R.drawable.ic_star,
+                R.drawable.ic_add_circle_24px));
+        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                "5.0","500",R.drawable.ic_star,
+                R.drawable.ic_add_circle_24px));
+        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                "5.0","500",R.drawable.ic_star,
+                R.drawable.ic_add_circle_24px));
+        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                "5.0","500",R.drawable.ic_star,
+                R.drawable.ic_add_circle_24px));
+        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                "5.0","500",R.drawable.ic_star,
+                R.drawable.ic_add_circle_24px));
+        listOfMenu.add(new Menu(R.drawable.lasagna,"Lasagna","Tasty",
+                "5.0","500",R.drawable.ic_star,
+                R.drawable.ic_add_circle_24px));
+//
+        allFoodItems.setValue(listOfMenu);
 
         allFoodItems = repository.getAllFoodItems();
 

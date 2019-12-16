@@ -1,6 +1,7 @@
 package com.example.thepod.data.source.local;
 
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -22,6 +23,6 @@ public interface MenuDao {
     void delete(Menu foodItem);
 
     @Query("SELECT * FROM menu_table ")
-    LiveData<List<Menu>> getAllFoodItems();
+    List<Menu> getAllFoodItems();
 
 }

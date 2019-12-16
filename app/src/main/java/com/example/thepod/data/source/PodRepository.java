@@ -4,6 +4,7 @@ import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.room.Delete;
 import androidx.room.Update;
 
@@ -12,18 +13,21 @@ import com.example.thepod.data.source.local.Menu;
 import com.example.thepod.data.source.local.MenuDao;
 import com.example.thepod.data.source.local.PodDatabase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PodRepository {
 
     private MenuDao menuDao;
-    private LiveData<List<Menu>> allFoodItems;
+    private MutableLiveData<List<Menu>> allFoodItems;
 
 
     public PodRepository(Application application){
         PodDatabase database = PodDatabase.getInstance(application);
         menuDao = database.menuDao();
-        allFoodItems = menuDao.getAllFoodItems();
+        allFoodItems=new MutableLiveData<>();
+        allFoodItems.setValue(new ArrayList<>());
+        allFoodItems.setValue(menuDao.getAllFoodItems());
     }
 
     public void insert(Menu foodItem){
@@ -39,7 +43,7 @@ public class PodRepository {
         new DeleteNoteAsyncTask(menuDao).execute(foodItem);
     }
 
-    public LiveData<List<Menu>> getAllFoodItems() {
+    public MutableLiveData<List<Menu>> getAllFoodItems() {
         return allFoodItems;
     }
 
